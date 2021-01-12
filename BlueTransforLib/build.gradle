@@ -34,3 +34,25 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
 }
+apply plugin: 'maven'
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: 'https://packages.aliyun.com/maven/repository/2042460-release-uGjYRt/') {
+                authentication(
+                        userName: '5f8bac92fa82bfeb80e2fda0',
+                        password: 'hRH(7dIy9e(U'
+                )
+            }
+            snapshotRepository(url: 'https://packages.aliyun.com/maven/repository/2042460-snapshot-KT0YKN/') {
+                authentication(
+                        userName: '5f8bac92fa82bfeb80e2fda0',
+                        password: 'hRH(7dIy9e(U'
+                )
+            }
+            pom.version = '1.0.0-SNAPSHOT'
+            pom.artifactId = 'connection'
+            pom.groupId = 'com.yezao.sdks'
+        }
+    }
+}
