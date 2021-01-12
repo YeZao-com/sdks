@@ -11,6 +11,12 @@ package com.yezao.sdks.connections
  * 只负责传输
  * */
 abstract class AbsConnection {
+
+    companion object{
+        const val DATA_UUID="b203b5eb-49c8-48aa-848c-390fa65c64d0"
+        const val CMD_UUID="46db3d8b-a0bd-43da-a03b-813933afe5ff"
+    }
+
     protected var isConnected = false
     protected lateinit var type: ConnectionType
 

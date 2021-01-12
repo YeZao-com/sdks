@@ -2,3 +2,4 @@ include ':Connection'
 include ':app'
 rootProject.name = "YeZaoSdks"
 include ':sdk'
+include ':connectiondemo'
