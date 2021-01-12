@@ -1,0 +1,3 @@
+include ':BlueTransforLib'
+include ':app'
+rootProject.name = "YeZaoSdks"
