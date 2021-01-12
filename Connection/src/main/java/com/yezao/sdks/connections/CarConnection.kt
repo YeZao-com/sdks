@@ -1,4 +1,4 @@
-package com.yezao.sdks.bluetransforlib
+package com.yezao.sdks.connections
 
 import android.bluetooth.BluetoothDevice
 import android.bluetooth.BluetoothSocket
